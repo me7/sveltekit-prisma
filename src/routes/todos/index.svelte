@@ -21,7 +21,7 @@
 
 {todos}
 
-<!-- <div class="todos">
+<div class="todos">
 	<h1>Todos</h1>
 
 	<form
@@ -76,7 +76,7 @@
 			</form>
 		</div>
 	{/each}
-</div> -->
+</div>
 
 <style>
 	.todos {

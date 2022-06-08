@@ -23,8 +23,8 @@ import { dataset_dev } from "svelte/internal"
 // 	});
 // }
 
-export function api(method: string, resource: string){
-	let data = {
+export function api(method: string, resource: string, data?: Record<string, unknown>) {
+	let todo1 = {
 		uid: 'aaa',
 		created_at: new Date(),
 		text: 'bbb',
@@ -33,8 +33,7 @@ export function api(method: string, resource: string){
 	
 	return {
 		status: 200,
-		json: function(){
-			return JSON.stringify(data)
-		}
+		// json: function(){return [{uid:'aaa', text:'bbb', done: false}]}
+		json: function(){return [todo1]}
 	}
 }
