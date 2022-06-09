@@ -1,19 +1,17 @@
 # sveltekit-prisma
-update to svelte 3.46 due to I cannot run original repo
-see https://github.com/me7/sveltekit-prisma
+https://github.com/me7/sveltekit-prisma
+
+original from this [blog post](https://www.mikenikles.com/blog/svelte-kit-prisma-a-match-made-in-digital-heaven) but update on Jun 9, 2022 due to original repo cannot run
 
 ## what's change?
 - use src/routes/todo/index.ts only, no _api.ts
 - prisma 3.15, svete 3.46
 
+## how to run
+- clone this repo
+- pnpm i
+- 
+
+
+> # Original Repo
 > This is a default [SvelteKit](https://kit.svelte.dev/) app (`npm init svelte@next`) which persists the todo items in a local SQLite > database using [Prisma](https://www.prisma.io/).
-> 
-> ## Blog post
-> 
-> For more details on how to configure Prisma for your SvelteKit app, please have a look at the corresponding [blog post](https://www.> mikenikles.com/blog/svelte-kit-prisma-a-match-made-in-digital-heaven).
-> 
-> ## Development & Try it
-> 
-> Click the following button to start an ephemeral development environment on [Gitpod](https://www.gitpod.io/).
-> 
-> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mikenikles/>sveltekit-prisma)
