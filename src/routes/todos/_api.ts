@@ -24,28 +24,37 @@
 // }
 
 import {PrismaClient} from '@prisma/client'
-const db = new PrismaClient()
+const prisma = new PrismaClient()
 
-export async function api(method: string, resource: string, data?: Record<string, unknown>) {
-	let todo1 = {
-		uid: 'aaa',
-		created_at: new Date(),
-		text: 'AAA',
-		done: false
+export type Todo = {
+	uid: string;
+	created_at: Date;
+	text: string;
+	done: boolean;
+	pending_delte: boolean
+};
+
+export async function api(method: string, resource: string, data?: Todo) {
+	let status = 500
+	let body = {}
+	switch(method.toUpperCase()){
+		case 'GET':
+			body = prisma.todo.findMany()
+			status = 200
+			break
 	}
-	let todo2 = {
-		uid: 'bbb',
-		created_at: new Date(),
-		text: 'bbb',
-		done: false,
-		pending_delete: true
-	}
-	
-	let todos = await db.todo.findMany()
+
 	return {
-		status: 200,
-		// json: function(){return [{uid:'aaa', text:'bbb', done: false}]}
-		// json: function(){return [todo1, todo2]}
-		json: function(){return todos}
+		status,
+		body
 	}
 }
+
+// async function get(resource: string){
+// 	let todos = await db.todo.findMany()
+// 	return {
+// 		status: 200,
+// 		json: function(){return todos}
+// 	}
+// }
+
