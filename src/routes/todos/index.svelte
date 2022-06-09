@@ -19,7 +19,7 @@
 	<meta name="description" content="A todo list app" />
 </svelte:head>
 
-{todos}
+{JSON.stringify(todos,2)}
 
 <div class="todos">
 	<h1>Todos</h1>

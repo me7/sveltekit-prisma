@@ -9,7 +9,7 @@
 	guarantees are made. Don't use it to organise your life.)
 */
 
-import { dataset_dev } from "svelte/internal"
+// import { dataset_dev } from "svelte/internal"
 
 // const base = 'https://api.svelte.dev';
 
@@ -23,17 +23,29 @@ import { dataset_dev } from "svelte/internal"
 // 	});
 // }
 
-export function api(method: string, resource: string, data?: Record<string, unknown>) {
+import {PrismaClient} from '@prisma/client'
+const db = new PrismaClient()
+
+export async function api(method: string, resource: string, data?: Record<string, unknown>) {
 	let todo1 = {
 		uid: 'aaa',
 		created_at: new Date(),
-		text: 'bbb',
+		text: 'AAA',
 		done: false
 	}
+	let todo2 = {
+		uid: 'bbb',
+		created_at: new Date(),
+		text: 'bbb',
+		done: false,
+		pending_delete: true
+	}
 	
+	let todos = await db.todo.findMany()
 	return {
 		status: 200,
 		// json: function(){return [{uid:'aaa', text:'bbb', done: false}]}
-		json: function(){return [todo1]}
+		// json: function(){return [todo1, todo2]}
+		json: function(){return todos}
 	}
 }
