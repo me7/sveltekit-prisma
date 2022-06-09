@@ -47,19 +47,16 @@ export async function del({request}: RequestEvent){
 export async function patch(ev: RequestEvent){
 	let form = await ev.request.formData()
 	let uid = String(form.get('uid'))
-	let text = String(form.get('text'))
-	let done = Boolean(form.get('done'))
-	console.log(uid, text, done)
-	// let body = await db.todo.update({
-	// 	where: {
-	// 		uid: String(ui)
-	// 	},
-	// 	data: {
-	// 		text: 'jjjj'
-	// 	}
-	// })
+	let data = form.has('text')
+		? {text: ''+form.get('text')}
+		: {done: !!form.get('done')}
+	let body = await db.todo.update({
+		where: {
+			uid: uid
+		},
+		data: data
+	})
 
-	
 	return {
 		status: 303,
 		headers: {
