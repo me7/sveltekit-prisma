@@ -50,11 +50,3 @@ export async function api(method: string, resource: string, data?: Todo) {
 	}
 }
 
-// async function get(resource: string){
-// 	let todos = await db.todo.findMany()
-// 	return {
-// 		status: 200,
-// 		json: function(){return todos}
-// 	}
-// }
-
