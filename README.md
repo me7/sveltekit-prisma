@@ -9,8 +9,9 @@ original from this [blog post](https://www.mikenikles.com/blog/svelte-kit-prisma
 
 ## how to run
 - clone this repo
-- pnpm i
-- 
+- `pnpm i` to install dependencies
+- `pnpm prisma db push` to create database
+- `pnpm dev` to run dev server
 
 
 > # Original Repo
