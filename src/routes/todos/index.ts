@@ -1,12 +1,8 @@
-// import { api } from './_api';
-import type { RequestHandler } from './__types';
-import {PrismaClient, type Todo} from '@prisma/client'
 import type { RequestEvent } from '@sveltejs/kit';
+import db from '$lib/db'
 
-const prisma = new PrismaClient()
-
-export const get: RequestHandler = async () => {
-	let todos = await prisma.todo.findMany()
+export const get = async () => {
+	let todos = await db.todo.findMany()
 	return {
 		body: {
 			todos
@@ -16,7 +12,7 @@ export const get: RequestHandler = async () => {
 
 export async function post(event: RequestEvent) {
 	const form = await event.request.formData();
-	let todo:Todo = await prisma.todo.create({
+	let todo = await db.todo.create({
 		data: {
 			text: form.get('text'),
 			created_at: new Date(),
