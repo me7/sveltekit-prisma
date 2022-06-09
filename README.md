@@ -11,7 +11,7 @@ original from this [blog post](https://www.mikenikles.com/blog/svelte-kit-prisma
 - clone this repo
 - `pnpm i` to install dependencies
 - `pnpm prisma db push` to create database
-- `pnpm dev` to run dev server
+- `pnpm dev --open` to run dev server and open in browser
 
 
 > # Original Repo
