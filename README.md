@@ -14,12 +14,16 @@ original from this [blog post](https://www.mikenikles.com/blog/svelte-kit-prisma
 - `pnpm dev --open` to run dev server and open in browser
 
 ## how to deploy
-- node
+### node
   - `pnpm i @sveltejs/adaptor-node`
   - edit svelte.config.js
   - `pnpm build`
   - `node build/index.js` to run
-- cloudflair?
+### varcel (10-Jun-2022 database using prisma not working yet)
+  - use @sveltejs/adapter-auto (not adapter-node)
+  - go to https://vercel.com/dashboard
+  - import your github project
+  - DONE 
 
 
 > # Original Repo
