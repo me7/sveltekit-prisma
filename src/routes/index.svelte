@@ -15,30 +15,28 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>Home</title>
+	<meta name="description" content="Home page" />
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>SvelteKit-Prisma App</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		This app is for tutorial, each folder will include each knowledge bits I've learn so far
 	</p>
+	<ul>
+		<li><a href="/counter">Counter (hello world for reactive app)</a></li>
+		<li><a href="/todos">Todo (save to SQLite DB using prisma)</a></li>
+		<li><a href="/form">Send data to server using FormData and JSON</a></li>
+	</ul>
 
-	<pre>npm init svelte</pre>
+	<p>Reference</p>
+	<ul>
+		<li><a href="https://kit.svelte.dev/docs/">SvelteKit Docs</a></li>
+		<li><a href="https://www.prisma.io/docs/concepts/overview/what-is-prisma">Prisma Doc</a></li>
+	</ul>
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
-	</p>
 </div>
 
 <style>
