@@ -4,7 +4,12 @@
   let birthday: Date
 
   async function handleSubmit(){
-    console.log({name, age, birthday})
+    let data = {name, age, birthday}
+    let res = await fetch('/form/api',{
+      method: 'POST',
+      body: JSON.stringify(data)
+    })
+    console.log(await res.text())
 
   }
 </script>
