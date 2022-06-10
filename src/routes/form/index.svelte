@@ -2,6 +2,7 @@
   let name:string
   let age:number
   let birthday: Date
+  let result:string
 
   async function handleSubmit(){
     let data = {name, age, birthday}
@@ -9,13 +10,16 @@
       method: 'POST',
       body: JSON.stringify(data)
     })
-    console.log(await res.text())
+    result = await res.text()
+    alert(result)
 
   }
 </script>
 
 <h1>Sample form using json fetch</h1>
-
+{#if result !== undefined}
+  {result}
+{/if}
 <form on:submit|preventDefault={handleSubmit}>
   <label>Name <input type="text" name="name" bind:value={name}></label><br>
   <label>Age <input type="number" name="age" bind:value={age}></label><br>
