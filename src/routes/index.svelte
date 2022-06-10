@@ -26,9 +26,9 @@
 		This app is for tutorial, each folder will include each knowledge bits I've learn so far
 	</p>
 	<ul>
-		<li><a href="/counter">Counter (hello world for reactive app)</a></li>
-		<li><a href="/todos">Todo (save to SQLite DB using prisma)</a></li>
-		<li><a href="/form">Send data to server using FormData and JSON</a></li>
+		<li><a href="/counter">Counter - hello world for reactive app</a></li>
+		<li><a href="/todos">Todo - save to SQLite DB using prisma</a></li>
+		<li><a href="/form">Form - Send data to server using FormData and JSON</a></li>
 	</ul>
 
 	<p>Reference</p>

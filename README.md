@@ -13,6 +13,14 @@ original from this [blog post](https://www.mikenikles.com/blog/svelte-kit-prisma
 - `pnpm prisma db push` to create database
 - `pnpm dev --open` to run dev server and open in browser
 
+## how to deploy
+- node
+  - `pnpm i @sveltejs/adaptor-node`
+  - edit svelte.config.js
+  - `pnpm build`
+  - `node build/index.js` to run
+- cloudflair?
+
 
 > # Original Repo
 > This is a default [SvelteKit](https://kit.svelte.dev/) app (`npm init svelte@next`) which persists the todo items in a local SQLite > database using [Prisma](https://www.prisma.io/).
