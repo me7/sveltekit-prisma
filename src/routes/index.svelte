@@ -1,61 +1,50 @@
-<script context="module" lang="ts">
+<script context="module">
+	import { browser, dev } from '$app/env';
+
+	// we don't need any JS on this page, though we'll load
+	// it in dev so that we get hot module replacement...
+	export const hydrate = dev;
+
+	// ...but if the client-side router is already loaded
+	// (i.e. we came here from elsewhere in the app), use it
+	export const router = browser;
+
+	// since there's no dynamic data here, we can prerender
+	// it so that it gets served as a static asset in prod
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>About</title>
+	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
+<div class="content">
+	<h1>About this app</h1>
 
-		to your new<br />SvelteKit app
-	</h1>
+	<p>
+		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
+		following into your command line and following the prompts:
+	</p>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
+	<pre>npm init svelte</pre>
 
-	<Counter />
-</section>
+	<p>
+		The page you're looking at is purely static HTML, with no client-side interactivity needed.
+		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
+		the devtools network panel and reloading.
+	</p>
+
+	<p>
+		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
+		it with JavaScript disabled!
+	</p>
+</div>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
+	.content {
 		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		max-width: var(--column-width);
+		margin: var(--column-margin-top) auto 0 auto;
 	}
 </style>
