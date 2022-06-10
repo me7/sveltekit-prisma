@@ -1,3 +1,7 @@
+> next action
+> formData - upload file
+> pdf viewer
+
 # sveltekit-prisma
 https://github.com/me7/sveltekit-prisma
 
