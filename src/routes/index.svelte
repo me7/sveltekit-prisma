@@ -33,6 +33,7 @@
 
 	<p>Reference</p>
 	<ul>
+		<li><a href="https://svelte.dev/docs">Svelte Docs</a></li>
 		<li><a href="https://kit.svelte.dev/docs/">SvelteKit Docs</a></li>
 		<li><a href="https://www.prisma.io/docs/concepts/overview/what-is-prisma">Prisma Doc</a></li>
 	</ul>
