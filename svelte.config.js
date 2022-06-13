@@ -16,6 +16,9 @@ const config = {
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
 		},
+		alias:{
+			$comp: 'src/components'
+		},
 
 		vite: {
 			plugins: [

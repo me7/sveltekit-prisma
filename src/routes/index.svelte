@@ -1,9 +1,13 @@
+<script>
+	import Navbar from "$comp/Navbar.svelte";
+</script>
+
 <svelte:head>
 	<title>OP4 Home</title>
-	<meta name="description" content="Home page" />
 </svelte:head>
 
 <div class="content">
+	<Navbar />
 	<h1 class="text-blue m3">SvelteKit-Prisma App</h1>
 
 	<p>
