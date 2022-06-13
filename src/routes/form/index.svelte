@@ -1,8 +1,12 @@
 <script lang="ts">
   import Button from "$comp/Button.svelte";
+  import Input from "$comp/Input.svelte";
+  import Date from "$comp/Date.svelte";
+  import Number from "$comp/Number.svelte";
 
-  export let name: string
-  let age:number = 0
+  let name: string
+  let seed = 'secret42'
+  let age:number = 10
   let birthday: Date
   let result:string
 
@@ -18,18 +22,18 @@
 
   }
 </script>
-<Button>Submit</Button>
-<Button primary>Submit</Button>
 
-<h1>Sample form using json fetch</h1>
+<h1>Sample form using json fetch aaaaaaaaaaaaaaaaa</h1>
 {#if result !== undefined}
   {result}
 {/if}
 <form on:submit|preventDefault={handleSubmit}>
-  <label>Name <input type="text" name="name" bind:value={name}></label><br>
-  <label>Age <input type="number" name="age" bind:value={age}></label><br>
-  <label>Birthday <input type="date" name="age" bind:value={birthday}></label><br>
-  <input type="submit" value="Save Data">
+  <Input bind:value={name}>Name</Input>
+  <Number bind:value={age}>Age</Number>
+  <Date bind:value={birthday}>Birthday</Date>
+  <Button>Save Data</Button>
+  <Button primary >Submit</Button>
+  
 
   {name}
   {age}

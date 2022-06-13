@@ -23,6 +23,8 @@
 		<li><a href="https://svelte.dev/docs" target="_blank">Svelte Docs</a></li>
 		<li><a href="https://www.prisma.io/docs/concepts/overview/what-is-prisma" target="_blank">Prisma Doc</a></li>
 		<li><a href="https://uno.antfu.me/" target="_blank">Unocss Interactive Docs</a></li>
+		<li><a href="https://tailwindcss.com/docs" target="_blank">Tailwind Docs</a></li>
+		<li><a href="https://tailwindui.com/components" target="_blank">Tailwind UI</a></li>
 	</ul>
 
 </div>
