@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/fira-mono': ^4.5.0
+  '@fontsource/krub': ^4.5.8
   '@prisma/client': ^3.15.0
   '@sveltejs/adapter-auto': next
   '@sveltejs/adapter-node': 1.0.0-next.78
@@ -18,6 +19,7 @@ specifiers:
 
 dependencies:
   '@fontsource/fira-mono': 4.5.8
+  '@fontsource/krub': 4.5.8
   '@prisma/client': 3.15.0_prisma@3.15.0
   '@sveltejs/adapter-node': 1.0.0-next.78
   cookie: 0.4.2
@@ -49,6 +51,10 @@ packages:
 
   /@fontsource/fira-mono/4.5.8:
     resolution: {integrity: sha512-sFuSPB/Km8B1fy3CH0NqO5Nb4GmVMzp3XFaw6MwK293xhm3OnB68QJawwTTjLewcrS78wOTAhTUB058qxurJoQ==}
+    dev: false
+
+  /@fontsource/krub/4.5.8:
+    resolution: {integrity: sha512-1smyx5VSyxl5Zv3B9h6QnmMfrGTWcNq2Vp9YmD03K6VKvS7W0u8zv344onoxzDhdhRtQKjijFUP/4qf9W7Ax/g==}
     dev: false
 
   /@iarna/toml/2.2.5:
