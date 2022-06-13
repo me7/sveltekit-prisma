@@ -11,7 +11,7 @@
 	<div class="text-center bg-cyan"><Header /></div>
 	<div id="content" class="flex grow">
 		<Sidebar />
-		<slot />
+		<div class="p-1"><slot /></div>
 	</div>
 	<div class="text-center bg-lime"><Footer /></div>
 </div>

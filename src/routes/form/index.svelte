@@ -1,8 +1,11 @@
-<script lang=ts>
-  let name:string
-  let age:number
+<script lang="ts">
+  import Button from "$comp/Button.svelte";
+
+  export let name: string
+  let age:number = 0
   let birthday: Date
   let result:string
+
 
   async function handleSubmit(){
     let data = {name, age, birthday}
@@ -15,6 +18,8 @@
 
   }
 </script>
+<Button>Submit</Button>
+<Button primary>Submit</Button>
 
 <h1>Sample form using json fetch</h1>
 {#if result !== undefined}
