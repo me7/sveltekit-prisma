@@ -1,6 +1,7 @@
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
+import Unocss from 'unocss/vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,8 +15,15 @@ const config = {
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
+		},
+
+		vite: {
+			plugins: [
+				Unocss()
+			]
 		}
-	}
+	},
+
 };
 
 export default config;
