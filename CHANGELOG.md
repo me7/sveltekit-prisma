@@ -7,3 +7,5 @@
   - `npm i -D unocss`
   - edit svelte.config.js
   - import 'uno.css' in __layout.svelte
+- add @fontsource/krub
+- change main layout to [flex](https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f)

@@ -1,1 +1,1 @@
-Sidebar
+<div class="bg-red">Sidebar</div>

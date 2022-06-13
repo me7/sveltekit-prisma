@@ -1,5 +1,4 @@
 <script>
-	import Navbar from "$comp/Navbar.svelte";
 </script>
 
 <svelte:head>
@@ -7,7 +6,6 @@
 </svelte:head>
 
 <div class="content">
-	<Navbar />
 	<h1 class="text-blue m3">SvelteKit-Prisma App</h1>
 
 	<p>
@@ -21,9 +19,10 @@
 
 	<p>Reference</p>
 	<ul>
-		<li><a href="https://svelte.dev/docs" target="_blank">Svelte Docs</a></li>
 		<li><a href="https://kit.svelte.dev/docs/" target="_blank">SvelteKit Docs</a></li>
+		<li><a href="https://svelte.dev/docs" target="_blank">Svelte Docs</a></li>
 		<li><a href="https://www.prisma.io/docs/concepts/overview/what-is-prisma" target="_blank">Prisma Doc</a></li>
+		<li><a href="https://uno.antfu.me/" target="_blank">Unocss Interactive Docs</a></li>
 	</ul>
 
 </div>

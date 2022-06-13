@@ -1,18 +1,20 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
-	import 'uno.css'
+	import Header from "$comp/Header.svelte";
+	import Sidebar from "$comp/Sidebar.svelte";
+	import Footer from "$comp/Footer.svelte";
+	import "../app.css";
+	import "uno.css";
 </script>
 
-<Header />
-
-<main>
-	<slot />
-</main>
-
-<footer>
-	<p><a href="/">Home</a></p>
-</footer>
+<!-- docs on css grid https://developer.chrome.com/docs/devtools/css/grid/ -->
+<div id="main" class="flex flex-col min-h-screen items-stretch">
+	<div class="text-center bg-cyan"><Header /></div>
+	<div id="content" class="flex grow">
+		<Sidebar />
+		<slot />
+	</div>
+	<div class="text-center bg-lime"><Footer /></div>
+</div>
 
 <style>
 </style>
