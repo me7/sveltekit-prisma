@@ -15,6 +15,7 @@
 		<li><a href="/counter">Counter - hello world for reactive app</a></li>
 		<li><a href="/todos">Todo - save to SQLite DB using prisma</a></li>
 		<li><a href="/form">Form - Send data to server using FormData and JSON</a></li>
+		<li><a href="/milligram">MilliGram.css - </a></li>
 	</ul>
 	<button class="btn">Demo button</button>
 	<p>Reference</p>

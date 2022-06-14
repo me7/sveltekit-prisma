@@ -2,7 +2,10 @@
 	import Header from "$comp/Header.svelte";
 	import Sidebar from "$comp/Sidebar.svelte";
 	import Footer from "$comp/Footer.svelte";
-	import "../app.css";
+	// import 'milligram'
+	// import "../milligram.css";
+	// import "../tacit.css";
+	// import "../app.css";
 	import "uno.css";
 </script>
 

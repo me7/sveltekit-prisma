@@ -8,7 +8,9 @@ specifiers:
   '@sveltejs/adapter-node': 1.0.0-next.78
   '@sveltejs/kit': next
   '@types/cookie': ^0.5.1
+  '@unocss/preset-attributify': ^0.39.0
   cookie: ^0.4.1
+  milligram: ^1.4.1
   prisma: ^3.15.0
   svelte: ^3.46.0
   svelte-check: ^2.7.1
@@ -23,11 +25,13 @@ dependencies:
   '@prisma/client': 3.15.0_prisma@3.15.0
   '@sveltejs/adapter-node': 1.0.0-next.78
   cookie: 0.4.2
+  milligram: 1.4.1
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.50
   '@sveltejs/kit': 1.0.0-next.350_svelte@3.48.0
   '@types/cookie': 0.5.1
+  '@unocss/preset-attributify': 0.39.0
   prisma: 3.15.0
   svelte: 3.48.0
   svelte-check: 2.7.2_svelte@3.48.0
@@ -300,6 +304,10 @@ packages:
     resolution: {integrity: sha512-GXJs1R0oRESgPv4UZKvNZCTnT5Iebn/E0bAHHaCugko2ccnqh6bHul7fcShXICwgT+hyQBPEF5SNS2BPcEjKpQ==}
     dev: true
 
+  /@unocss/core/0.39.0:
+    resolution: {integrity: sha512-S6ujOluyh/VTIMYTlD2cyfiIlZ9cd/idvBXEky+7nFYHsiQHA0WCTOvCECuLt5Rv8V+njVRF3XLBSStZ+6M+pQ==}
+    dev: true
+
   /@unocss/inspector/0.38.2:
     resolution: {integrity: sha512-d1HojYl/ztE/+UXMcvOWw7gGewZ/GyhvaHVNsaENcH0ORPootSS1PvE2JhPYiIs43IYq6ZzRFCVH0MUqL8ARhQ==}
     dependencies:
@@ -311,6 +319,12 @@ packages:
     resolution: {integrity: sha512-ySW1kG9eyyUK33nHmOIxGw2oGJqmNv39KwMN5MQL3314WVXl3JsViD2TG4LGktVR6K64mrNAC9TUG/eEXaRLLQ==}
     dependencies:
       '@unocss/core': 0.38.2
+    dev: true
+
+  /@unocss/preset-attributify/0.39.0:
+    resolution: {integrity: sha512-Iw9wxN6KEC9UySXh3aRsKAi8df4bz+Owv6r9AdAvimr9JaLZQRl6JUIWhVAMIRfdn/aKztdu8B6gmg7pNZsGFA==}
+    dependencies:
+      '@unocss/core': 0.39.0
     dev: true
 
   /@unocss/preset-icons/0.38.2:
@@ -1231,6 +1245,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /milligram/1.4.1:
+    resolution: {integrity: sha512-RCgh/boHhcXWOUfKJWm3RJRoUeaEguoipDg0mJ31G0tFfvcpWMUlO1Zlqqr12K4kAXfDlllaidu0x7PaL2PTFg==}
+    dependencies:
+      normalize.css: 8.0.1
+    dev: false
+
   /mimic-fn/2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
@@ -1388,6 +1408,10 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
 
   /npm-bundled/1.1.2:
     resolution: {integrity: sha512-x5DHup0SuyQcmL3s7Rx/YQ8sbw/Hzg0rj48eN0dV7hf5cmQq5PXIeioroH3raV1QC1yh3uTYuMThvEQF3iKgGQ==}
