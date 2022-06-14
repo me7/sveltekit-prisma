@@ -2,7 +2,7 @@
 import adapter from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 import Unocss from 'unocss/vite'
-import { presetUno, presetIcons, presetAttributify } from 'unocss';
+import { presetUno, presetIcons, presetAttributify,transformerVariantGroup } from 'unocss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -33,6 +33,9 @@ const config = {
 								'vertical-align': 'middle',
 							},
 						}),						
+					],
+					transformers: [
+						transformerVariantGroup(),
 					],
 					// shortcuts: [{
 					// 	btn: 'py-2 px-4 font-semibold rounded-lg shadow-md',
