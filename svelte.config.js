@@ -2,8 +2,7 @@
 import adapter from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 import Unocss from 'unocss/vite'
-import { presetAttributify } from 'unocss';
-import { presetUno } from 'unocss';
+import { presetUno, presetIcons, presetAttributify } from 'unocss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -28,6 +27,12 @@ const config = {
 					presets:[
 						presetAttributify(),
 						presetUno(),
+						presetIcons({
+							extraProperties: {
+								'display': 'inline-block',
+								'vertical-align': 'middle',
+							},
+						}),						
 					],
 					// shortcuts: [{
 					// 	btn: 'py-2 px-4 font-semibold rounded-lg shadow-md',

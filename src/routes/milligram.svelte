@@ -2,6 +2,7 @@
   // import 'milligram'
 </script>
 <button text-white bg="blue-400 hover:blue-700" font="lg">Simple button</button>
+<h2>This is icon <span class="i-mdi-alarm" bg-lime></span></h2>
 <main class="wrapper">
   <section class="container" id="typography">
     <h5 class="title">Typography</h5>
