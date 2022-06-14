@@ -1,10 +1,19 @@
 <script lang=ts>
   // import 'milligram'
 </script>
+
+<style>
+  .gt {
+    @apply bg-lime-400 text-blue pb-4 border-1;
+    padding-top: 1rem;
+  }
+</style>
+
 <button text-white bg="blue-400 hover:blue-700" font="lg">Simple button</button>
 <h2>This is icon <span class="i-mdi-alarm" bg-lime></span></h2>
 <div class="i-logos-vue text-3xl" />
 <div class="hover:(bg-gray-400 font-not-italic) font-italic">This is a div</div>
+<div class="gt">This paragraph use @apply transform</div>
 <main class="wrapper">
   <section class="container" id="typography">
     <h5 class="title">Typography</h5>

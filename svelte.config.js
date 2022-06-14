@@ -2,7 +2,7 @@
 import adapter from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 import Unocss from 'unocss/vite'
-import { presetUno, presetIcons, presetAttributify,transformerVariantGroup } from 'unocss';
+import { presetUno, presetIcons, presetAttributify,transformerVariantGroup, transformerDirectives } from 'unocss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -25,8 +25,8 @@ const config = {
 			plugins: [
 				Unocss({
 					presets:[
-						presetAttributify(),
 						presetUno(),
+						presetAttributify(),
 						presetIcons({
 							extraProperties: {
 								'display': 'inline-block',
@@ -36,6 +36,7 @@ const config = {
 					],
 					transformers: [
 						transformerVariantGroup(),
+						transformerDirectives(),
 					],
 					// shortcuts: [{
 					// 	btn: 'py-2 px-4 font-semibold rounded-lg shadow-md',

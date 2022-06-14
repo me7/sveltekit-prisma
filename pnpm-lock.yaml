@@ -11,6 +11,7 @@ specifiers:
   '@types/cookie': ^0.5.1
   '@unocss/preset-attributify': ^0.39.0
   '@unocss/preset-icons': ^0.39.0
+  '@unocss/transformer-directives': ^0.39.0
   '@unocss/transformer-variant-group': ^0.39.0
   cookie: ^0.4.1
   milligram: ^1.4.1
@@ -37,6 +38,7 @@ devDependencies:
   '@types/cookie': 0.5.1
   '@unocss/preset-attributify': 0.39.0
   '@unocss/preset-icons': 0.39.0
+  '@unocss/transformer-directives': 0.39.0
   '@unocss/transformer-variant-group': 0.39.0
   prisma: 3.15.0
   svelte: 3.48.0
@@ -417,6 +419,13 @@ packages:
     resolution: {integrity: sha512-x4WhCorfN2r3qgcG31RQhNeyypIYyrqvpt2J/X7s+8MBqcgMFTupQYgVsKw7mOWHlYtEiNA1K7Evr+yOHEMQaA==}
     dependencies:
       '@unocss/core': 0.38.2
+      css-tree: 2.1.0
+    dev: true
+
+  /@unocss/transformer-directives/0.39.0:
+    resolution: {integrity: sha512-m206WURKdyTslaiPGfFET51Yd5ZQdKi5sEYPn1zDrQmYac89HtJsj/cWc8beoSphi3+qdfWWXPqSHG9QZ3ibng==}
+    dependencies:
+      '@unocss/core': 0.39.0
       css-tree: 2.1.0
     dev: true
 
