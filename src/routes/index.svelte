@@ -16,7 +16,7 @@
 		<li><a href="/todos">Todo - save to SQLite DB using prisma</a></li>
 		<li><a href="/form">Form - Send data to server using FormData and JSON</a></li>
 	</ul>
-
+	<button class="btn">Demo button</button>
 	<p>Reference</p>
 	<ul>
 		<li><a href="https://kit.svelte.dev/docs/" target="_blank">SvelteKit Docs</a></li>

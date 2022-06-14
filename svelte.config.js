@@ -22,7 +22,14 @@ const config = {
 
 		vite: {
 			plugins: [
-				Unocss()
+				Unocss({
+					shortcuts: [{
+						btn: 'py-2 px-4 font-semibold rounded-lg shadow-md',
+						},
+						// dynamic shortcuts
+						[/^btn-(.*)$/, ([, c]) => `bg-${c}-400 text-${c}-100 py-2 px-4 rounded-lg transform hover:scale-125`]
+					]
+				})
 			]
 		}
 	},
