@@ -5,7 +5,7 @@
 	// import 'milligram'
 	// import "../milligram.css";
 	// import "../tacit.css";
-	// import "../app.css";
+	import "../app.css";
 	import "uno.css";
 </script>
 

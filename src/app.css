@@ -28,7 +28,7 @@ body {
 	);
 }
 
-/* body::before {
+body::before {
 	content: '';
 	width: 80vw;
 	height: 100vh;
@@ -44,7 +44,12 @@ body {
 	opacity: 0.05;
 }
 
-#svelte {
+button {
+	@apply: px-3 py-2;
+	background-color: var(--primary-color);
+}
+
+/* #svelte {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;

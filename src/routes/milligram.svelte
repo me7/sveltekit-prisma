@@ -8,7 +8,7 @@
     padding-top: 1rem;
   }
 </style>
-
+<div text-rose-4>Rose Color Div</div>
 <button text-white bg="blue-400 hover:blue-700" font="lg">Simple button</button>
 <h2>This is icon <span class="i-mdi-alarm" bg-lime></span></h2>
 <div class="i-logos-vue text-3xl" />
@@ -75,6 +75,135 @@
     </div>
   </section>
 
+  <section class="container" id="forms">
+    <h5 class="title">Forms</h5>
+    <hr />
+    <div class="example">
+      <form>
+        <fieldset>
+          <legend>Legend</legend>
+          <div class="row">
+            <div class="column">
+              <label for="textField">Text field</label>
+              <input type="text" placeholder="Text field" id="textField" />
+              <label for="emailField">Email field</label>
+              <input
+                type="email"
+                id="emailField"
+                placeholder="Email field"
+              />
+              <label for="numberField">Number field</label>
+              <input
+                type="number"
+                id="numberField"
+                placeholder="Number field"
+              />
+              <label for="passwordField">Password field</label>
+              <input
+                type="password"
+                id="passwordField"
+                placeholder="Password field"
+              />
+              <label for="selectField">Select field</label>
+              <select id="selectField">
+                <option value="selectField1">Select field 1</option>
+                <option value="selectField2">Select field 2</option>
+                <option value="selectField3">Select field 3</option>
+                <option value="selectField4">Select field 4</option>
+              </select>
+              <label for="colorField">Color field</label>
+              <input
+                type="color"
+                id="colorField"
+                placeholder="Your browser doesn't support this field."
+              />
+              <label for="weekField">Week field</label>
+              <input
+                type="week"
+                id="weekField"
+                placeholder="Your browser doesn't support this field."
+              />
+              <label for="datetimeField">Datetime field</label>
+              <input
+                type="datetime"
+                id="datetimeField"
+                placeholder="Your browser doesn't support this field."
+              />
+              <label for="searchField">Search field</label>
+              <input
+                type="search"
+                id="searchField"
+                placeholder="Search field"
+              />
+            </div>
+            <div class="column">
+              <label for="telField">Tel field</label>
+              <input type="tel" id="telField" placeholder="Tel field" />
+              <label for="urlField">URL field</label>
+              <input type="url" id="urlField" placeholder="URL field" />
+              <label for="radioField">Radio field</label>
+              <div class="row">
+                <div class="column">
+                  <input type="radio" id="radioField1" name="radioField" />
+                  <label class="label-inline" for="radioField1"
+                    >Radio field 1</label
+                  >
+                </div>
+                <div class="column">
+                  <input type="radio" id="radioField2" name="radioField" />
+                  <label class="label-inline" for="radioField2"
+                    >Radio field 2</label
+                  >
+                </div>
+              </div>
+              <label for="radioField">Checkbox field</label>
+              <div class="row">
+                <div class="column">
+                  <input type="checkbox" id="checkboxField1" />
+                  <label class="label-inline" for="checkboxField1"
+                    >Checkbox field 1</label
+                  >
+                </div>
+                <div class="column">
+                  <input type="checkbox" id="checkboxField2" />
+                  <label class="label-inline" for="checkboxField2"
+                    >Checkbox field 2</label
+                  >
+                </div>
+              </div>
+              <label for="textareaField">Textarea field</label>
+              <textarea
+                placeholder="Textarea field"
+                id="textareaField"
+              ></textarea>
+              <label for="dateField">Date field</label>
+              <input
+                type="date"
+                id="dateField"
+                placeholder="Your browser doesn't support this field."
+              />
+              <label for="monthField">Month field</label>
+              <input
+                type="month"
+                id="monthField"
+                placeholder="Your browser doesn't support this field."
+              />
+              <label for="datetimeLocalField">Datetime-Local field</label>
+              <input
+                type="datetime-local"
+                id="datetimeLocalField"
+                placeholder="Your browser doesn't support this field."
+              />
+              <label for="formButtons">Form buttons</label>
+              <input type="submit" />
+              <input type="reset" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  
   <section class="container" id="blockquotes">
     <h5 class="title">Blockquotes</h5>
     <hr />
@@ -288,639 +417,5 @@
     </div>
   </section>
 
-  <section class="container" id="forms">
-    <h5 class="title">Forms</h5>
-    <hr />
-    <div class="example">
-      <form>
-        <fieldset>
-          <legend>Legend</legend>
-          <div class="row">
-            <div class="column">
-              <label for="textField">Text field</label>
-              <input type="text" placeholder="Text field" id="textField" />
-              <label for="emailField">Email field</label>
-              <input
-                type="email"
-                id="emailField"
-                placeholder="Email field"
-              />
-              <label for="numberField">Number field</label>
-              <input
-                type="number"
-                id="numberField"
-                placeholder="Number field"
-              />
-              <label for="passwordField">Password field</label>
-              <input
-                type="password"
-                id="passwordField"
-                placeholder="Password field"
-              />
-              <label for="selectField">Select field</label>
-              <select id="selectField">
-                <option value="selectField1">Select field 1</option>
-                <option value="selectField2">Select field 2</option>
-                <option value="selectField3">Select field 3</option>
-                <option value="selectField4">Select field 4</option>
-              </select>
-              <label for="colorField">Color field</label>
-              <input
-                type="color"
-                id="colorField"
-                placeholder="Your browser doesn't support this field."
-              />
-              <label for="weekField">Week field</label>
-              <input
-                type="week"
-                id="weekField"
-                placeholder="Your browser doesn't support this field."
-              />
-              <label for="datetimeField">Datetime field</label>
-              <input
-                type="datetime"
-                id="datetimeField"
-                placeholder="Your browser doesn't support this field."
-              />
-              <label for="searchField">Search field</label>
-              <input
-                type="search"
-                id="searchField"
-                placeholder="Search field"
-              />
-            </div>
-            <div class="column">
-              <label for="telField">Tel field</label>
-              <input type="tel" id="telField" placeholder="Tel field" />
-              <label for="urlField">URL field</label>
-              <input type="url" id="urlField" placeholder="URL field" />
-              <label for="radioField">Radio field</label>
-              <div class="row">
-                <div class="column">
-                  <input type="radio" id="radioField1" name="radioField" />
-                  <label class="label-inline" for="radioField1"
-                    >Radio field 1</label
-                  >
-                </div>
-                <div class="column">
-                  <input type="radio" id="radioField2" name="radioField" />
-                  <label class="label-inline" for="radioField2"
-                    >Radio field 2</label
-                  >
-                </div>
-              </div>
-              <label for="radioField">Checkbox field</label>
-              <div class="row">
-                <div class="column">
-                  <input type="checkbox" id="checkboxField1" />
-                  <label class="label-inline" for="checkboxField1"
-                    >Checkbox field 1</label
-                  >
-                </div>
-                <div class="column">
-                  <input type="checkbox" id="checkboxField2" />
-                  <label class="label-inline" for="checkboxField2"
-                    >Checkbox field 2</label
-                  >
-                </div>
-              </div>
-              <label for="textareaField">Textarea field</label>
-              <textarea
-                placeholder="Textarea field"
-                id="textareaField"
-              ></textarea>
-              <label for="dateField">Date field</label>
-              <input
-                type="date"
-                id="dateField"
-                placeholder="Your browser doesn't support this field."
-              />
-              <label for="monthField">Month field</label>
-              <input
-                type="month"
-                id="monthField"
-                placeholder="Your browser doesn't support this field."
-              />
-              <label for="datetimeLocalField">Datetime-Local field</label>
-              <input
-                type="datetime-local"
-                id="datetimeLocalField"
-                placeholder="Your browser doesn't support this field."
-              />
-              <label for="formButtons">Form buttons</label>
-              <input type="submit" />
-              <input type="reset" />
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </section>
 
-  <section class="container" id="tables">
-    <h5 class="title">Tables</h5>
-    <hr />
-    <div class="example">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Height</th>
-            <th>Born</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Steve Kerr</td>
-            <td>Coach</td>
-            <td>1,91</td>
-            <td>September 27, 1965</td>
-            <td>Beirut, Lebanon</td>
-          </tr>
-          <tr>
-            <td>Stephen Curry</td>
-            <td>Point Guard</td>
-            <td>1,91</td>
-            <td>March 14, 1988</td>
-            <td>Akron, OH</td>
-          </tr>
-          <tr>
-            <td>Klay Thompson</td>
-            <td>Small Forward</td>
-            <td>2,01</td>
-            <td>February 8, 1990</td>
-            <td>Los Angeles, CA</td>
-          </tr>
-          <tr>
-            <td>Draymond Green</td>
-            <td>Power Forward</td>
-            <td>2,01</td>
-            <td>March 4, 1990</td>
-            <td>Saginaw, MI</td>
-          </tr>
-          <tr>
-            <td>Andre Iguodala</td>
-            <td>Small Forward and Shooting Guard</td>
-            <td>1,98</td>
-            <td>January 28, 1984</td>
-            <td>Springfield, IL</td>
-          </tr>
-          <tr>
-            <td>Shaun Livingston</td>
-            <td>Point Guard and Shooting Guard</td>
-            <td>2,01</td>
-            <td>September 11, 1985</td>
-            <td>Peoria, IL</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="container" id="grids">
-    <h5 class="title">Grids</h5>
-    <hr />
-    <div class="example">
-      <div class="row">
-        <div class="column"><span class="column-demo">100%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-10">
-          <span class="column-demo">10%</span>
-        </div>
-        <div class="column column-90">
-          <span class="column-demo">90%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-20">
-          <span class="column-demo">20%</span>
-        </div>
-        <div class="column column-80">
-          <span class="column-demo">80%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25">
-          <span class="column-demo">25%</span>
-        </div>
-        <div class="column column-75">
-          <span class="column-demo">75%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-33">
-          <span class="column-demo">33%</span>
-        </div>
-        <div class="column column-67">
-          <span class="column-demo">67%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-40">
-          <span class="column-demo">40%</span>
-        </div>
-        <div class="column column-60">
-          <span class="column-demo">60%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-50">
-          <span class="column-demo">50%</span>
-        </div>
-        <div class="column column-50">
-          <span class="column-demo">50%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-60">
-          <span class="column-demo">60%</span>
-        </div>
-        <div class="column column-40">
-          <span class="column-demo">40%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-67">
-          <span class="column-demo">67%</span>
-        </div>
-        <div class="column column-33">
-          <span class="column-demo">33%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-75">
-          <span class="column-demo">75%</span>
-        </div>
-        <div class="column column-25">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-80">
-          <span class="column-demo">80%</span>
-        </div>
-        <div class="column column-20">
-          <span class="column-demo">20%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-90">
-          <span class="column-demo">90%</span>
-        </div>
-        <div class="column column-10">
-          <span class="column-demo">10%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">100%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-90">
-          <span class="column-demo">90%</span>
-        </div>
-        <div class="column"><span class="column-demo">10%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-80">
-          <span class="column-demo">80%</span>
-        </div>
-        <div class="column"><span class="column-demo">20%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-75">
-          <span class="column-demo">75%</span>
-        </div>
-        <div class="column"><span class="column-demo">25%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-67">
-          <span class="column-demo">67%</span>
-        </div>
-        <div class="column"><span class="column-demo">33%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-60">
-          <span class="column-demo">60%</span>
-        </div>
-        <div class="column"><span class="column-demo">40%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-50">
-          <span class="column-demo">50%</span>
-        </div>
-        <div class="column"><span class="column-demo">50%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-40">
-          <span class="column-demo">40%</span>
-        </div>
-        <div class="column"><span class="column-demo">60%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-33">
-          <span class="column-demo">33%</span>
-        </div>
-        <div class="column"><span class="column-demo">67%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-25">
-          <span class="column-demo">25%</span>
-        </div>
-        <div class="column"><span class="column-demo">75%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-20">
-          <span class="column-demo">20%</span>
-        </div>
-        <div class="column"><span class="column-demo">80%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-10">
-          <span class="column-demo">10%</span>
-        </div>
-        <div class="column"><span class="column-demo">90%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">100%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">50%</span></div>
-        <div class="column"><span class="column-demo">50%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">33.3%</span></div>
-        <div class="column"><span class="column-demo">33.3%</span></div>
-        <div class="column"><span class="column-demo">33.3%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">25%</span></div>
-        <div class="column"><span class="column-demo">25%</span></div>
-        <div class="column"><span class="column-demo">25%</span></div>
-        <div class="column"><span class="column-demo">25%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">20%</span></div>
-        <div class="column"><span class="column-demo">20%</span></div>
-        <div class="column"><span class="column-demo">20%</span></div>
-        <div class="column"><span class="column-demo">20%</span></div>
-        <div class="column"><span class="column-demo">20%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">16.6%</span></div>
-        <div class="column"><span class="column-demo">16.6%</span></div>
-        <div class="column"><span class="column-demo">16.6%</span></div>
-        <div class="column"><span class="column-demo">16.6%</span></div>
-        <div class="column"><span class="column-demo">16.6%</span></div>
-        <div class="column"><span class="column-demo">16.6%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">14.28%</span></div>
-        <div class="column"><span class="column-demo">14.28%</span></div>
-        <div class="column"><span class="column-demo">14.28%</span></div>
-        <div class="column"><span class="column-demo">14.28%</span></div>
-        <div class="column"><span class="column-demo">14.28%</span></div>
-        <div class="column"><span class="column-demo">14.28%</span></div>
-        <div class="column"><span class="column-demo">14.28%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-        <div class="column"><span class="column-demo">12.5%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-        <div class="column"><span class="column-demo">11.11%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-        <div class="column"><span class="column-demo">10%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-        <div class="column"><span class="column-demo">9.09%</span></div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-        <div class="column"><span class="column-demo">8.3%</span></div>
-      </div>
-      <div class="row">
-        <div class="column column-50 column-offset-25">
-          <span class="column-demo">50%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-50 column-offset-50">
-          <span class="column-demo">50%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25 column-offset-75">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25 column-offset-50">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25 column-offset-25">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25 column-offset-25">
-          <span class="column-demo">25%</span>
-        </div>
-        <div class="column column-25 column-offset-25">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25">
-          <span class="column-demo">25%</span>
-        </div>
-        <div class="column column-25 column-offset-50">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><span class="column-demo">25%</span></div>
-        <div class="column column-50 column-offset-25">
-          <span class="column-demo">50%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-50">
-          <span class="column-demo">50%</span>
-        </div>
-        <div class="column column-25 column-offset-25">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-25">
-          <span class="column-demo">25%</span>
-        </div>
-        <div class="column column-25 column-offset-25">
-          <span class="column-demo">25%</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-75 column-offset-25">
-          <span class="column-demo">75%</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container" id="code">
-    <h5 class="title">Code</h5>
-    <hr />
-    <div class="example">
-      <pre><code>.milligram 
-color: #9b4dca;
-</code></pre>
-    </div>
-  </section>
-
-  <section class="container" id="utilities">
-    <h5 class="title">Utilities</h5>
-    <hr />
-    <div class="example">
-      <div class="clearfix">
-        <img
-          class="float-left"
-          src="http://placehold.it/320/d1d1d1/?text=float+to+left"
-          alt="float to left"
-        />
-        <img
-          class="float-right"
-          src="http://placehold.it/320/d1d1d1/?text=float+to+right"
-          alt="float to right"
-        />
-      </div>
-    </div>
-  </section>
-
-  <section class="container" id="examples">
-    <h5 class="title">Examples</h5>
-    <hr />
-    <ul>
-      <li>
-        <a
-          href="https://milligram.io/getting-started.html"
-          title="Getting Started"
-          >Getting Started</a
-        >
-      </li>
-      <li>
-        <a href="https://milligram.io/typography.html" title="Typography"
-          >Typography</a
-        >
-      </li>
-      <li>
-        <a href="https://milligram.io/blockquotes.html" title="Blockquotes"
-          >Blockquotes</a
-        >
-      </li>
-      <li>
-        <a href="https://milligram.io/buttons.html" title="Buttons"
-          >Buttons</a
-        >
-      </li>
-      <li>
-        <a href="https://milligram.io/lists.html" title="Lists">Lists</a>
-      </li>
-      <li>
-        <a href="https://milligram.io/forms.html" title="Forms">Forms</a>
-      </li>
-      <li>
-        <a href="https://milligram.io/tables.html" title="Tables">Tables</a>
-      </li>
-      <li>
-        <a href="https://milligram.io/grids.html" title="Grids">Grids</a>
-      </li>
-      <li>
-        <a href="https://milligram.io/code.html" title="Code">Code</a>
-      </li>
-      <li>
-        <a href="https://milligram.io/utilities.html" title="Utilities"
-          >Utilities</a
-        >
-      </li>
-      <li>
-        <a href="https://milligram.io/tips.html" title="Tips">Tips</a>
-      </li>
-      <li>
-        <a
-          href="https://milligram.io/browser-support.html"
-          title="Browser Support"
-          >Browser Support</a
-        >
-      </li>
-    </ul>
-  </section>
-
-  <footer class="footer">
-    <section class="container">
-      <p>
-        Designed with ♥ by
-        <a
-          target="blank"
-          href="https://twitter.com/cjpatoilo"
-          title="CJ Patoilo"
-          >CJ Patoilo</a
-        >. Licensed under the
-        <a
-          target="blank"
-          href="https://github.com/milligram/milligram#license"
-          title="MIT License"
-          >MIT License</a
-        >.
-      </p>
-    </section>
-  </footer>
 </main>

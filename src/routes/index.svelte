@@ -17,7 +17,7 @@
 		<li><a href="/form">Form - Send data to server using FormData and JSON</a></li>
 		<li><a href="/milligram">MilliGram.css - </a></li>
 	</ul>
-	<button class="btn">Demo button</button>
+	<button bg-fuchsia>Demo button</button>
 	<p>Reference</p>
 	<ul>
 		<li><a href="https://kit.svelte.dev/docs/" target="_blank">SvelteKit Docs</a></li>
@@ -26,6 +26,7 @@
 		<li><a href="https://uno.antfu.me/" target="_blank">Unocss Interactive Docs</a></li>
 		<li><a href="https://tailwindcss.com/docs" target="_blank">Tailwind Docs</a></li>
 		<li><a href="https://tailwindui.com/components" target="_blank">Tailwind UI</a></li>
+		<li><a href="https://windicss.org/utilities/general/colors.html" target="_blank">Windi CSS docs</a></li>
 	</ul>
 
 </div>
