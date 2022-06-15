@@ -34,6 +34,12 @@ const config = {
 							},
 						}),						
 					],
+					theme:{
+						colors: {
+							'primary':'#60a5fa',
+							'accent':'#ffff00'
+						}
+					},
 					transformers: [
 						transformerVariantGroup(),
 						transformerDirectives(),

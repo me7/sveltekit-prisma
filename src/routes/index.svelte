@@ -6,7 +6,7 @@
 </svelte:head>
 
 <div class="content">
-	<h1 class="text-blue m3">SvelteKit-Prisma App</h1>
+	<h1 class="c-primary bg-accent m3">SvelteKit-Prisma App</h1>
 
 	<p>
 		This app is for tutorial, each folder will include each knowledge bits I've learn so far
