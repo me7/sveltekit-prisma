@@ -1,10 +1,16 @@
 /* use unocss + transform-directive
-fix unknown rule @apply -> https://stackoverflow.com/a/71655846
+fix unknown rule @apply by use @apply or https://stackoverflow.com/a/71655846
 */
 @import '@fontsource/krub';
 
+/* Translate from svelteKit Demo */
 :root {
 	font-family: krub;
+}
+
+* {
+	font-family: krub;
+	--at-apply: box-border;
 }
 
 body {
@@ -27,14 +33,43 @@ p {
 	@apply: leading-6;
 }
 
-a {
-	@apply: c-accent no-underline;
+a:hover {
+	@apply: bg-primary;
 }
 
-a:hover {
-	@apply: underline;
+/* From Milligram CSS */
+button, input[type='submit'], input[type='reset'] {
+	@apply:  px-3 py-2 rd cursor-pointer fw-700 hover:(bg-primary) disabled:(op60 cursor-default);
 }
 
 pre {
 	@apply: c-text bg-gray-1 p2 rd of-x-auto;
+}
+
+blockquote {
+	@apply: b-primary b-l-3 p-2;
+}
+
+hr{
+	@apply: m-8;
+}
+	/* Form */
+input, select, textarea {
+	@apply: bg-transparent b-1 rd p-2 focus:(bg-primary) mb-3;
+}
+
+label, legend {
+	@apply: fw700;
+}
+
+input[type='checkbox'], input[type='radio'] {
+	@apply: inline;
+}
+
+label > input { /* make input under label */
+	@apply: block;
+}
+
+img {
+	max-width: 100%;
 }

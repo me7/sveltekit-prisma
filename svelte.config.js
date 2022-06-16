@@ -36,7 +36,7 @@ const config = {
 					],
 					theme:{
 						colors: {
-							'primary':'#0081a7',
+							'primary':'#bbd0ff',
 							'accent':'#bc6c25',
 							'header': '#4c4c4c',
 							'text': '#444444',
@@ -55,7 +55,6 @@ const config = {
 			]
 		}
 	},
-
 };
 
 export default config;
