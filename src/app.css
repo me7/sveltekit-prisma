@@ -3,43 +3,12 @@ fix unknown rule @apply -> https://stackoverflow.com/a/71655846
 */
 @import '@fontsource/krub';
 
-/* :root {
-	font-family: Krub, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #1453bf;
-	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+:root {
+	font-family: krub;
 }
 
-
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(50% 50% at 50% 50%,
-			var(--pure-white) 0%,
-			rgba(255, 255, 255, 0) 100%);
-	opacity: 0.05;
-} */
-
 body {
-	@apply: bg-black from-red min-h-screen m0;
-	background: linear-gradient(180deg,
-			var(--primary-color) 0%,
-			var(--secondary-color) 10.45%,
-			var(--tertiary-color) 41.35%);
+	@apply: bg-gradient-to-b from-blue-gray-200 min-h-screen m0;
 }
 
 h1, h2, p {
@@ -47,7 +16,7 @@ h1, h2, p {
 }
 
 h1 {
-	@apply: text-center text-8 md:text-10;
+	@apply: text-center text-8 md: text-10;
 }
 
 h2 {
