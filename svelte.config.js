@@ -36,8 +36,10 @@ const config = {
 					],
 					theme:{
 						colors: {
-							'primary':'#60a5fa',
-							'accent':'#ffff00'
+							'primary':'#0081a7',
+							'accent':'#bc6c25',
+							'header': '#4c4c4c',
+							'text': '#444444',
 						}
 					},
 					transformers: [
