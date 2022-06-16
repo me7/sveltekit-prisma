@@ -14,7 +14,7 @@ fix unknown rule @apply by use @apply or https://stackoverflow.com/a/71655846
 }
 
 body {
-	@apply: bg-gradient-to-b from-blue-gray-200 min-h-screen m0;
+	@apply: bg-gradient-to-b from-blue-gray-200 min-h-screen;
 }
 
 h1, h2, p {
